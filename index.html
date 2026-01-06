@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raul Toache's Portfolio Website</title>
+        <meta name="description" content="Portfolio of Raul Toache, a software engineer specializing in C#, .NET, full-stack development, automation, and robotics. Explore my projects and skills.">
+        <meta name="keywords" content="Raul Toache, software engineer, C#, .NET, full-stack developer, automation, robotics, portfolio">
+        <meta name="author" content="Raul Toache">
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- Open Graph for social sharing -->
+        <meta property="og:title" content="Raul Toache's Portfolio Website">
+        <meta property="og:description" content="Portfolio of Raul Toache, a software engineer specializing in C#, .NET, full-stack development, automation, and robotics.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with actual URL -->
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <div class="header-content">
+                <h1>Raul Toache's Portfolio Website</h1>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I’m a software engineer with a background in automation, robotics, and operations, currently focused on full-stack development with C# and .NET. I enjoy building systems that solve real problems, whether that’s backend logic, data flows, or user-facing applications.<br><br>
+
+My experience spans industrial automation software and modern web development, which gives me a pragmatic, systems-oriented approach to coding. I value clean architecture, maintainable code, and understanding why something is built—not just how.<br><br>
+
+I’m currently expanding my full-stack skills through Microsoft’s Full-Stack Developer certification, while exploring areas like cloud, DevOps, and IoT. I’m especially interested in projects where software meets the real world: automation, tools, and intelligent systems.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="filter-buttons">
+                <button onclick="filterProjects('all', event)">All</button>
+                <button onclick="filterProjects('web', event)">Web</button>
+                <button onclick="filterProjects('dotnet', event)">.NET</button>
+            </div>
+            <div class="projects-grid">
+            <article data-category="web">
+                <h3>Portfolio Website</h3>
+                <figure>
+                    <img src="images/portfolio.jpg" alt="Screenshot of Portfolio Website">
+                    <figcaption>Responsive portfolio website</figcaption>
+                </figure>
+                <p>
+                    A responsive personal portfolio designed to present my background, skills, and projects in a clear and structured way.
+                    The focus was on clean layout, accessibility, and maintainable front-end code.
+                </p>
+
+                <ul>
+                    <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Focus:</strong> Responsive design, semantic HTML, accessibility</li>
+                    <li><strong>Key Learning:</strong> Structuring content for readability and professional presentation</li>
+                </ul>
+            </article>
+            <article data-category="dotnet">
+                <h3>Library Management Tool (Console Application)</h3>
+                <figure>
+                    <img src="images/library.jpg" alt="Screenshot of the Library Management Tool">
+                    <figcaption>Console-based library management tool</figcaption>
+                </figure>
+                <p>
+                    A console-based application focused on managing a small library system, including book registration,
+                    borrowing workflows, and search functionality. The project emphasized clean logic and structured program flow.
+                </p>
+
+                <ul>
+                    <li><strong>Tech:</strong> C#, .NET</li>
+                    <li><strong>Focus:</strong> Data structures, control flow, input validation</li>
+                    <li><strong>Key Learning:</strong> Designing reusable methods and maintaining application state</li>
+                </ul>
+            </article>
+            <article data-category="dotnet">
+                <h3>Inventory Tracking Tool (Console Application)</h3>
+                <figure>
+                    <img src="images/inventory.jpg" alt="Diagram of Inventory Management Tool">
+                    <figcaption>Inventory workflow diagram</figcaption>
+                </figure>
+                <p>
+                    A console application designed to manage inventory items and stock levels.
+                    The goal was to model real-world inventory logic while keeping the application modular and easy to extend.
+                </p>
+
+                <ul>
+                    <li><strong>Tech:</strong> C#, .NET</li>
+                    <li><strong>Focus:</strong> Business logic, data handling, basic domain modeling</li>
+                    <li><strong>Key Learning:</strong> Translating real-world processes into structured code</li>
+                </ul>
+            </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>
+                    <strong>Problem Solving:</strong>
+                    I approach problems methodically by breaking them into smaller components, identifying root causes, and validating solutions step by step.
+                </li>
+                <li>
+                    <strong>Execution & Reliability:</strong>
+                    I focus on delivering reliable, well-tested solutions through careful planning, consistent execution, and attention to detail.
+                </li>
+                <li>
+                    <strong>Outcome-Oriented Thinking:</strong>
+                    I prioritize solutions that produce measurable value and directly support project or business objectives.
+                </li>
+                <li>
+                    <strong>Team Collaboration:</strong>
+                    I work effectively within cross-functional teams, communicate clearly, and contribute to shared technical goals.
+                </li>
+                <li>
+                    <strong>Business & System Awareness:</strong>
+                    I understand how software fits into larger systems and business processes, and I align technical decisions with real-world constraints.
+                </li>
+            </ul>
+            <h3>Hard Skills</h3>
+            <ul>
+                <li>
+                    <strong>C# & .NET:</strong>
+                    Experience building desktop and web applications using modern C#, .NET, and related tooling.
+                </li>
+                <li>
+                    <strong>Desktop Application Development:</strong>
+                    Building Windows desktop applications using WPF and the MVVM pattern, with a focus on maintainable architecture and clear UI logic separation.
+                </li>
+                <li>
+                    <strong>Full-Stack Web Development:</strong>
+                    Developing full-stack web applications using ASP.NET Core, modern frontend practices, and RESTful APIs.
+                </li>
+                <li>
+                    <strong>System & Workflow Design:</strong>
+                    Designing state-driven workflows, process logic, and system interactions inspired by real-world automation and operational systems.
+                </li>
+                <li>
+                    <strong>Data & Configuration Management:</strong>
+                    Working with structured data, application configuration, and environment-specific settings to support scalable and maintainable systems.
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, email me at <a href="mailto:rettoh@hotmail.com">rettoh@hotmail.com</a> or <a href="mailto:rauleduardotoachethomas@gmail.com">rauleduardotoachethomas@gmail.com</a></p>
+            <p>Note: For security reasons the following form is disabled and will not send emails.</p>
+            <form novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+                <small id="name-error" class="error"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+                <small id="email-error" class="error"></small>
+
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                <small id="message-error" class="error"></small>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Raul Toache. All rights reserved.</p>
+        </footer>
+        
+
+        <!-- Modal for image lightbox -->
+        <div id="image-modal" class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="modal-caption"></div>
+        </div>
+    </body>
+</html>
