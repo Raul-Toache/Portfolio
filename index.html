@@ -160,17 +160,19 @@ I’m currently expanding my full-stack skills through Microsoft’s Full-Stack 
             <p>Note: For security reasons the following form is disabled and will not send emails.</p>
             <form novalidate>
                 <label for="name">Name</label>
-                <input type="text" id="name" />
+                <input type="text" id="name" name="name" />
                 <small id="name-error" class="error"></small>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" name="email" />
                 <small id="email-error" class="error"></small>
 
                 <label for="message">Message</label>
-                <textarea id="message"></textarea>
+                <textarea id="message" name="message" ></textarea>
                 <small id="message-error" class="error"></small>
-
+                
+                <p id="success-message" class="success" style="display:none;"></p>
+                
                 <button type="submit">Send</button>
             </form>
         </section>
@@ -188,4 +190,5 @@ I’m currently expanding my full-stack skills through Microsoft’s Full-Stack 
             <div id="modal-caption"></div>
         </div>
     </body>
+
 </html>
