@@ -180,8 +180,8 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const isValid =
-        validateName() &
-        validateEmail() &
+        validateName() &&
+        validateEmail() &&
         validateMessage();
 
     if (isValid) {
